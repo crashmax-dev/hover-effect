@@ -15,7 +15,8 @@ class HoverEffect {
 
   private mouseleave(event: MouseEvent): void {
     this.el.classList.remove('over')
-    this.el.style.transform = `perspective(${this.el.clientWidth}px) rotateX(0deg) rotateY(0deg)`
+    this.el.style.transform =
+      `perspective(${this.el.clientWidth}px) rotateX(0deg) rotateY(0deg)`
   }
 
   private mousemove(event: MouseEvent) {
@@ -30,13 +31,8 @@ class HoverEffect {
     // const _rotateY = (vertical * this.threshold - this.threshold / 2).toFixed(2)
     // const _rotateX = (horizontal * this.threshold - this.threshold / 2).toFixed(2)
 
-    let transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg)`
-
-    if (this.el.classList.contains('over')) {
-      transform += ' scale3d(1.07, 1.07, 1.07)'
-    }
-
-    card.style.transform = transform
+    card.style.transform =
+      `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1.07, 1.07, 1.07)`
   }
 }
 
