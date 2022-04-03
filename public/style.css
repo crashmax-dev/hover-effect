@@ -1,6 +1,27 @@
 body {
-  background-color: #f0f0f2;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #3a454b;
+}
+
+.card {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #263238;
+  width: 200px;
+  height: 200px;
+  transition: all 0.1s linear;
+  box-shadow: 0 0 0 rgb(14 21 47 / 1%), 0 0 0 rgb(14 21 47 / 11%);
+}
+
+.card.over {
+  box-shadow: 0 45px 100px rgba(14, 21, 47, 0.014), 0 16px 40px rgba(14, 21, 47, 0.11);
 }
