@@ -1,5 +1,4 @@
 /public
 /dist
 **/*.js
-**/*.test.ts
 **/*.config.ts

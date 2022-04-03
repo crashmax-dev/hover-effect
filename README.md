@@ -1,1 +1,1 @@
-# webpack-umd-template
+# hover-effect
